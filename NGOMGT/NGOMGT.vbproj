@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AEB385D-E6A7-442A-95EA-B4D0B9F90343}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>NGOMGT.My.MyApplication</StartupObject>
+    <RootNamespace>NGOMGT</RootNamespace>
+    <AssemblyName>NGOMGT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>NGOMGT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>NGOMGT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\10.5.3700.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\10.5.3700.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\10.5.3700.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adoption.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Adoption.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sponsor.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sponsor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TandC2.Designer.vb">
+      <DependentUpon>TandC2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TandC2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdoption.Designer.vb">
+      <DependentUpon>frmAdoption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdoption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGrievance.Designer.vb">
+      <DependentUpon>frmGrievance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGrievance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAasra.Designer.vb">
+      <DependentUpon>frmAasra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAasra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKiran.Designer.vb">
+      <DependentUpon>frmKiran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKiran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaitreya.Designer.vb">
+      <DependentUpon>frmMaitreya.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaitreya.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQueries.Designer.vb">
+      <DependentUpon>frmQueries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQueries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuery.Designer.vb">
+      <DependentUpon>frmQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSahaaya.Designer.vb">
+      <DependentUpon>frmSahaaya.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSahaaya.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelect.Designer.vb">
+      <DependentUpon>frmSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMouse.Designer.vb">
+      <DependentUpon>frmMouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSponsor.Designer.vb">
+      <DependentUpon>frmSponsor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSponsor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTandC.Designer.vb">
+      <DependentUpon>frmTandC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTandC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrishuul.Designer.vb">
+      <DependentUpon>frmTrishuul.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrishuul.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVolunteer.Designer.vb">
+      <DependentUpon>frmVolunteer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVolunteer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NGOdbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NGOdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NGOdbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NGOdbDataSet1.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Adoption.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Adoption.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sponsor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Sponsor.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAasra.resx">
+      <DependentUpon>frmAasra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdoption.resx">
+      <DependentUpon>frmAdoption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGrievance.resx">
+      <DependentUpon>frmGrievance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKiran.resx">
+      <DependentUpon>frmKiran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaitreya.resx">
+      <DependentUpon>frmMaitreya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQueries.resx">
+      <DependentUpon>frmQueries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuery.resx">
+      <DependentUpon>frmQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSahaaya.resx">
+      <DependentUpon>frmSahaaya.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelect.resx">
+      <DependentUpon>frmSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMouse.resx">
+      <DependentUpon>frmMouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSponsor.resx">
+      <DependentUpon>frmSponsor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTandC.resx">
+      <DependentUpon>frmTandC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrishuul.resx">
+      <DependentUpon>frmTrishuul.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVolunteer.resx">
+      <DependentUpon>frmVolunteer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TandC2.resx">
+      <DependentUpon>TandC2.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="NGOdbDataSet.xsc">
+      <DependentUpon>NGOdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NGOdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NGOdbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NGOdbDataSet.xss">
+      <DependentUpon>NGOdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NGOdbDataSet1.xsc">
+      <DependentUpon>NGOdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NGOdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NGOdbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NGOdbDataSet1.xss">
+      <DependentUpon>NGOdbDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

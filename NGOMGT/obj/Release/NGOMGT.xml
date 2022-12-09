@@ -1,0 +1,131 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NGOMGT
+</name>
+</assembly>
+<members>
+<member name="T:NGOMGT.NGOdbDataSet1.ADOPTIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1.SPONSORSHIPDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1.ADOPTIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1.SPONSORSHIPRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1.ADOPTIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1.SPONSORSHIPRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1TableAdapters.ADOPTIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1TableAdapters.SPONSORSHIPTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(NGOMGT.NGOdbDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(NGOMGT.NGOdbDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(NGOMGT.NGOdbDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.UpdateAll(NGOMGT.NGOdbDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet.ADOPTIONDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet.ADOPTIONRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet.ADOPTIONRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSetTableAdapters.ADOPTIONTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(NGOMGT.NGOdbDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(NGOMGT.NGOdbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(NGOMGT.NGOdbDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.UpdateAll(NGOMGT.NGOdbDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:NGOMGT.NGOdbDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
